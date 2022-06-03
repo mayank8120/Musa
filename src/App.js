@@ -4,6 +4,7 @@ import Home from './views/Home/Home';
 import StatePage from './views/StatePage.js/StatePage';
 import NavBar from "./containers/NavBar";
 import Footer from "./containers/Footer";
+import ImmigrationLaws from "./views/ImmigrationLaws/ImmigrationLaws";
 
 
 
@@ -21,6 +22,7 @@ function App() {
                         <Route path="/" exact component={Home} />
                         <Route path="/home" exact component={Home} />
                         <Route path="/state" exact component={StatePage} />
+                        <Route path="/immigrationLaws" exact component={ImmigrationLaws} />
                     </Switch>
                     <Footer />
                 </Router>
