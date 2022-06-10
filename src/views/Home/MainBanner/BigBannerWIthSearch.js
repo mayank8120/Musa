@@ -18,7 +18,7 @@ const BigBannerWIthSearch = () => {
                                 <a href="#"><img src={require('../../../assets/img/loctr.svg').default} /></a>
                                 <input type="text" class="form-control" placeholder="Find by county, state, or ZIP Code"
                                     aria-label="Username" />
-                                <button href="#" class="orangeBtn brdrRadius4 fontWeight700 fontSize16">Search</button>
+                                <button href="#" class="orangeBtn brdrRadius4 fontWeight700 fontSize16 transition">Search</button>
                             </div>
                         </div>
                     </div>

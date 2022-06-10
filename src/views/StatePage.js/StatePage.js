@@ -11,11 +11,7 @@ import StatePageMidSection from './StatePageMidSection'
 
 const StatePage = () => {
     return (
-        <>
-
-            {/* <div class="wrapper"> */}
-            {/* <!--navbar--> */}
-
+        <div class='bgGrey'>
 
 
             {/* <!--breadcrumb--> */}
@@ -29,23 +25,15 @@ const StatePage = () => {
                     </nav>
                 </div>
             </div>
-            {/* <!--state Page--> */}
             <StatePageMidSection />
-            {/* <!--governmnt Issued--> */}
             <GovtIssueComponent />
-            {/* <!--procedures--> */}
 
 
             <MarriageLicenseApplicationProcedure />
 
-            {/* <!--stateList--> */}
             <StateListAndSearch />
-            {/* <!--footer--> */}
-            <Footer />
-            {/* </div> */}
 
-
-        </>
+        </div>
     )
 }
 

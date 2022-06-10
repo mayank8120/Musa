@@ -5,7 +5,7 @@ const StateWIseSearchSection = () => {
         <>
 
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="stateDetlInfo tryLocation d-flex align-items-center brdrRadius4 mb-0">
+                <div class="stateDetlInfo tryLocation d-flex align-items-center brdrRadius4 mb-0 bgWhite">
                     <span><img src={require('../../assets/img/tryLocation.svg').default} /></span>
                     <div class="flex1 ">
                         <h5 class="fontSize16 fontWeight700 primaryColor">Couldn’t find what you’re looking for? Try other location</h5>

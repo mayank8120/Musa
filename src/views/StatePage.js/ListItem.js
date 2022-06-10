@@ -2,7 +2,7 @@ import React from 'react'
 
 const ListItem = () => {
     return (
-        <div class="stateDetlInfo brdrRadius4">
+        <div class="stateDetlInfo brdrRadius4 bgWhite">
             <div class="d-flex align-items-center stateName">
                 <h3 class="fontSize18 fontWeight700 mb-0">Norwalk Los Angeles County Long Name Example</h3>
                 <div class="ms-auto">

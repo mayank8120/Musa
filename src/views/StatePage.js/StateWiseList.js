@@ -43,7 +43,6 @@ const StateWiseList = () => {
                 <ListItem />
                 <ListItem />
                 <ListItem />
-
             </div>
             <StateWIseSearchSection />
 
