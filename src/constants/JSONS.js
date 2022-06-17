@@ -162,7 +162,6 @@ export const immigrationProcessAndInterview = {
                 heading: 'In 2 to 4 weeks',
                 paras: [
                     'The INS will send you 3 or 4 receipts. Keep them safe as you will need them. You may also receive a text message from INS on your phone.',
-
                 ]
             },
             {
@@ -196,3 +195,171 @@ export const immigrationProcessAndInterview = {
 
 export const repeatingColorList = ['greyBorder', 'orangeBorder', 'greenBorder', 'greyBorder', 'orangeBorder', 'greenBorder', 'greyBorder', 'orangeBorder', 'greenBorder', 'greyBorder', 'orangeBorder', 'greenBorder',]
 
+export const navigationList = [
+    {
+        idname: 'fncs',
+        title: 'Fiances',
+        height: '232',
+        lb: '0',
+        ub: '892'
+    },
+    {
+        idname: 'spss',
+        title: 'Spouses',
+        height: '892',
+        lb: '892',
+        ub: '1938'
+    },
+    {
+        idname: 'grncrdsubdoc',
+        title: 'Green Cards Submission Documents',
+        height: '1938',
+        lb: '1938',
+        ub: '2716'
+    },
+    {
+        idname: 'grncrdappprcss',
+        title: 'Green Cards Application Process',
+        height: '2716',
+        lb: '2716',
+        ub: '2875'
+    },
+    {
+        idname: 'immiprocess',
+        title: 'Immigration Process & Interview',
+        height: '2875',
+        lb: '2875',
+        ub: '3768'
+    },
+    {
+        idname: 'prepintrv',
+        title: 'Preparation for Interview',
+        height: '3768',
+        lb: '3768',
+        ub: '4567'
+    },
+    {
+        idname: 'immifee',
+        title: 'Immigration Fees',
+        height: '4567',
+        lb: '4567',
+        ub: '5080'
+    },
+    {
+        idname: 'immires',
+        title: 'Immigration Resources',
+        height: '5080',
+        lb: '5080',
+        ub: '9999999999'
+    }
+]
+
+
+
+
+
+
+export const weddingCeremoniesList = [
+
+    {
+        title: "Religious Ceremonies",
+        idname: "religiousCeremonies",
+        paras: ["If the bride and groom follow the same faith, or if they’re looking for a traditional wedding, they’ll likely choose a religious ceremony—meaning they’ll tie the knot in accordance with the customs and guidelines of the particular faith. Since many religions view marriage as a holy act, the bride and groom must typically meet certain requirements before marrying in a place of worship; for example, one or both of you will likely need to practice the religion of the church, mosque, or synagogue. Religious ceremonies are beautiful, elegant, and meaningful—but keep in mind that you may have less freedom in terms of dress code, song choice, and vows. Additionally, religious ceremonies aren’t binding by law, and you’ll need to get a marriage license to legally and officially become a married."]
+    },
+    {
+        title: "Civil Ceremonies",
+        idname: "civilCeremonies",
+        paras: ["Say a couple isn’t religious, they desire complete creative control over their big day, or they follow extremely different religions and don’t want an interfaith wedding. Since faith-based ceremonies are likely out of the question, the bride and groom are left with two options: a civil ceremony or a spiritual ceremony. In a civil ceremony, a bride and groom get married under the law instead of under God. The wedding is often conducted by a government official like a Justice of the Peace, Notary, Judge, or County Clerk, which makes it legally binding. Since the non-religious ceremony doesn’t need to follow certain traditions, a couple has greater freedom to customize their venue, vows, attire, officiant, music, and more. Some couples choosing a civil ceremony tie the knot in City Hall or a courthouse, but these types of ceremonies can be held anywhere."]
+    },
+    {
+        title: "Spiritual Ceremonies",
+        idname: "spiritualCeremonies",
+        paras: ["Some couples don’t adhere strongly to a particular religion, or they may consider themselves spiritual but not religious. If the bride and groom decide not to wed in a civil or religious ceremony, they may opt for a spiritual one instead. The wedding won’t follow the traditions of a particular faith, so the couple can customize every detail as they please. They may even include some aspects of traditional religious weddings, like an opening prayer or a ketubah signing, but they still have complete creative control in accordance with their beliefs. Like civil weddings, spiritual ceremonies can be held anywhere, and a government official usually presides over the nuptials. Friends or family members can also become ordained and marry the couple. The wedding will be legally binding as long as it’s done according to the law."]
+    },
+
+
+    {
+        idname: 'romanCatholic',
+        title: 'Roman Catholic',
+        paras: ["These wedding ceremonies—which must take place in a Catholic church—often occur during a nuptial mass, which lasts from 45 minutes to an hour.",
+            "They may be held at any time as long as they don’t conflict with the weekend mass schedule, with the exception of several holidays during Easter week—Holy Thursday, Good Friday and Holy Saturday.",
+            "Introductory rites are followed by the Liturgy of the Word, in which the couple’s selections are read.",
+            "Afterwards, the priest gives a brief homily concerning marriage.",
+            "The rings are blessed and exchanged after the Declaration of Consent, and the vows are taken.",
+            "Afterwards, the mass continues with the Liturgy of the Eucharist and concluding rites."]
+    },
+    {
+        idname: 'easternOrthodox',
+        title: 'Eastern Orthodox Ceremony',
+        paras: ["Several rituals are preformed—each three times to represent the Holy Trinity—during an Eastern Orthodox ceremony.",
+            "The priest blesses the rings and places crowns on the heads of the bride and groom, lit candles are held during the ceremony, and, after a Gospel reading, the couple shares a cup of wine.",
+            "Then the congregation sings “God Grant Them Many Years” while the couple circles the ceremonial table, hand in hand.",
+            "The wedding ceremony, which takes place during a mass, is similar to the Roman Catholic wedding ceremony.",
+            "Protestant Ceremony",
+            "Based on the Book of Common Prayer, the Protestant wedding ceremony is a fairly short service, beginning with the couple welcoming wedding guests and the Prayer of Blessing.",
+            "Scripture passages are read before the Giving in Marriage, when the couple’s parents give their affirmation.",
+            "The congregation responds, vows and rings are exchanged, and the Lord’s Supper is celebrated.",
+            "Then the couple lights the Unity Candle, and the wedding ceremony concludes with the Benediction."]
+
+    },
+    {
+        idname: 'ewishCeremony',
+        title: 'Jewish Ceremony',
+        paras: [
+            "The Jewish wedding is one rich in tradition and symbolism. The wedding day is considered to be the bride and groom’s own Yom Kippur and they will both fast for the whole day. The day focuses on the couple’s commitment to each other and to the Jewish faith.",
+            "Most Jewish wedding ceremonies are held in a synagogue, but this is not a requirement.",
+            "The wedding ceremony cannot take place on the Sabbath, during Passover, or on other holy days. The bride and groom do not see each other for one week preceding the wedding day.",
+            "Prior to the ceremony is a time called Kabbalat Panim where the bride and groom greet guests separately. The ceremony takes place under a chuppah which is a canopy. No jewelry is to be worn by the bride and groom under the chuppah because it could cause a focus on material possessions. The bride circles the groom seven times and the settles on his right side. There are two cups of wine that will be used throughout the ceremony and the first  accompanies the betrothal blessings which are recited by the rabbi.",
+            "There is a tradition for the mother of the bride and mother of the groom to break a plate together which symbolizes the seriousness of the relationship. The Badeken ceremony is where the groom and his family cover the bride’s face with a veil, symbolizing his commitment to clothe and protect his wife. The Seven Benedictions are recited and the bride and groom drink blessed wine. Then, rings and wedding vows are exchanged, the ketubah (Jewish marriage contract) is read, and the groom smashes a ritual wine glass with his foot. A festive meal is held to celebrate with much music and dancing. The bride and groom are now allowed to end their fast."
+        ]
+    },
+    {
+        idname: 'muslimCeremony',
+        title: 'Muslim Ceremony',
+        paras: [
+            "Traditions will differ depending on culture, Islamic sect and observations of gender separation rules.",
+
+            "Prior to the wedding ceremony, Henna Parties are held with the bride and her closet female friends and family members. Henna is meant to not only adorn the bride, but to protect her as well. Baths are used to cleanse and prepare the couple for marriage. Depending on the regional traditions, some brides are escorted to their purifying bath by musicians and dancers making it a festive process.",
+
+            "In many Muslim countries, male friends and family of both the bride and groom will meet at the mosque on the Friday after the proposal. A ceremony called a fatha is then held and prayers are spoken and arms are outstretched to thank God and to bless the fathers of the bride and groom.",
+
+            "Many countries and sects require the men and women to stay separate during the ceremony and reception. There is no specific officiant of the ceremony and any Muslim who understands Islamic traditions may perform the ceremony. There is a contract called the Meher that is signed and read at the ceremony stating the monetary amount that the groom will give to the bride. There are two separate parts to the contract: An amount that is given to the bride prior to the marriage and an amount that is given throughout the bride’s life. The Meher is considered the brides security and can be used in any way she chooses. The marriage contract is signed at a ceremony called the Nikah. The groom states the details of the Meher in front of at least two male witnesses who both are required to sign the contract as well. The bride and groom may then share a piece of sweet fruit. At the conclusion of the ceremony a reading of the Fatinah, the first chapter of the Qur’an."
+        ]
+    },
+    {
+        idname: 'hinduCeremony',
+        title: 'Hindu Ceremony',
+        paras: [
+            "The Indian culture celebrates marriage as a sacrament or a sanskara, a ritual which enables two individuals to start their journey together, as one. The Hindu wedding emphasizes three essential values: happiness, harmony and growth.",
+
+            "Prior to the wedding ceremony, an engagement party known as a Mangi is held, serving as a time to bless the couple and give them gifts of jewelry and clothing. The bride and her friends will have a Mehndi party before the day of the wedding. This is where the bride is adorned with intricate henna designs on her arms, hands, legs and feet.  The Mehndi represents the strength of love in a marriage and the darker the color, the stronger the love is.",
+
+            "The ceremony is typically held on a day in the “bright half” of the northern course of the sun. A wedding can last for multiple days, but in an American/Hindu wedding, typically there will only be Friday night activities and an all day ceremony on Saturday. The wedding will typically take place outside under a canopy called a mandap. Under this mandap will be a sacred fire.",
+
+            "There are many different elements to the actual ceremony:",
+
+            "The arrival of the Vara Yatra – The groom and his family arrive at the ceremony with much singing and dancing where they are greeted by the bride and her family.",
+
+            "Grahashanti – The nine planets are invoked and blessings are received from each planet.",
+
+            "Kanyadan – The bride is led in by a brother or an uncle. The bride’s parents are waiting with the groom to offer their daughter in marriage. The parents wash the feet of the bride and groom with milk and water.",
+
+            "Hastamilap – The bride and groom’s right hands are wrapped tightly with cotton thread. The multiple layers of it make it strong symbolizing a strong marriage and an unbreakable bond.",
+
+            "During the ceremony the bride and groom are seated in front of a holy fire and family members are invited to make offerings in the fire. The bride and groom walk around the fire four times and vows are spoken to validate the marriage.",
+
+            "Dhruvadarshan – The conclusion of the ceremony is where the priest directs the newlyweds eyes to the north star which is a constant among the shifting constellations around it. This symbolizes that the marriage will be steadfast, just like the north star."
+        ]
+    },
+    {
+        idname: 'buddhistCeremony',
+        title: 'Buddhist Ceremony',
+        paras: [
+            "The wedding has long been believed to be a secular affair in the eyes of many Buddhist communities, but in recent times it has been blessed by the monks and allows couples to hold a small affair. The ceremony will differ depending on the couple’s focus which could be on Buddha, Dharma, nature, God, or creation. The ceremony is not focused on religion, but rather the couple’s promise to each other to live a harmonious and spiritual life.",
+
+            "Prior to the wedding ceremony, the couple might visit a Buddhist monk to make sure that their horoscopes are aligned and show that they are a compatible couple. There is a traditional betrothal ceremony called a Chessian which might be held to celebrate the wedding.",
+
+            "The ceremony will focus on meditation and moments of silence which creates a inner peace. A shrine might be erected with an image of Buddah surrounded by candles and flowers. Refuges and precepts are repeated by the bride and groom after the officiant. It can be personal things which individualizes the ceremony. The bride and groom might offer up a poem or a song that shows their love for each other. Buddhist wedding vows are repeated out of the Sigilovdda Sutta."
+        ]
+    }
+]

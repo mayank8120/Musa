@@ -9,7 +9,7 @@ const NavBar = () => {
     const loca = window.location.href;
 
 
-    // const [scrolled, setScrolled] = React.useState(false);
+    const [scrolled, setScrolled] = React.useState(false);
 
     // const handleScroll = () => {
     //     const offset = window.scrollY;
@@ -37,7 +37,9 @@ const NavBar = () => {
 
 
 
-            <div className={x.join(" ")}>
+            <div
+                className={x.join(" ")}
+            >
                 <div class="usMarr_navBar w-100 bgWhite top-0 ">
                     {/* <!--topNavbar--> */}
                     <div class="topNavbr">

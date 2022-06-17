@@ -3,37 +3,29 @@
 * {
   font-family: 'Open Sans', sans-serif;
 }
-
 .selector-for-some-widget {
   box-sizing: content-box;
 }
-
 /*--font family--*/
 .fontFamily2 {
   font-family: 'Unna', serif;
 }
-
 /*--colors--*/
 .primaryColor {
   color: #1A1846;
 }
-
 .secondaryColor {
   color: #F16B64;
 }
-
 .whiteColor {
   color: #fff;
 }
-
 .greenColor {
   color: #28BE94;
 }
-
 .bgWhite {
   background-color: white !important;
 }
-
 .bgGrey {
   background-color: #fafafa !important;
 }
@@ -200,10 +192,14 @@
 } */
 
 .navbarTop.transition {
-  position: fixed !important;
+  /* position: fixed !important;
   width: 100%;
   z-index: 99;
-  top: 0;
+  top: 0; */
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0; /* required */
+  z-index: 999;
 }
 
 .height180 {
@@ -212,7 +208,7 @@
 }
 
 /* .heightCalc {
-  max-height: calc(100% - 180px);
+	padding-top: calc(180.00 / 1649 * 100%);
 } */
 
 .navbar-light .navbar-text {
@@ -427,7 +423,7 @@
 
 /*--state based list--*/
 .stateBasedList {
-  margin: 30px 0;
+  padding: 30px 0 30px;
 }
 
 .statList {
@@ -923,3 +919,18 @@ span.crossBox {
 .sticky+.contentsssss {
   padding-top: 60px;
 } */
+
+.leftTabList {
+  position: sticky;
+  top: 200px;
+}
+
+
+
+
+
+
+.insideNavigation {
+  /* position: sticky; */
+  /* padding-top: 200px; */
+}

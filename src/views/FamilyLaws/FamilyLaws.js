@@ -3,14 +3,28 @@ import { familyLawsContent } from '../../constants/JSONS'
 import BannerSmallCards from '../../containers/BannerSmallCards'
 import LongContentCard from '../../containers/LongContentCard'
 import StateListAndSearch from '../../containers/StateListAndSearch'
-import { getCurrentState, getLocationParaCount } from '../../Functions/functions'
+import { getCardLb, getClassForNav, getCurrentHash, getLocationParaCount, useScrollPositionHook } from '../../Functions/functions'
 
 // import '../../assets'
 
 const FamilyLaws = () => {
 
 
+
+
+
+
     const pageLocation = window.location.href;
+
+
+    const scrollPos = useScrollPositionHook();
+    console.log(scrollPos);
+
+
+    // const scrollToLink = (id) => {
+    //     if (scrollPos > 10)
+    //         window.scrollTo(0, parseFloat(getCardLb(id)) + 200);
+    // }
 
 
 
@@ -42,7 +56,6 @@ const FamilyLaws = () => {
                         <p class="mb-0 fontSize16 fontWeight400 primaryColor">Here are some family laws that you might want to consider for marriage in Los Angeles</p>
                     </div>
 
-
                     <div class="row">
                         <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
                             <div class="tabPage">
@@ -50,11 +63,21 @@ const FamilyLaws = () => {
                                     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                         <div class="leftTabList">
                                             <ul>
-                                                <li class={getLocationParaCount(pageLocation) == 1 || getCurrentState(pageLocation, "mrrg") === true ? `active` : ""}><a href="#mrrg">Marriage and Income Tax</a></li>
-                                                <li class={getCurrentState(pageLocation, "dvrc") ? `active` : ""}><a href="#dvrc">Divorce and Income Tax</a></li>
-                                                <li class={getCurrentState(pageLocation, "almny") ? `active` : ""}><a href="#almny">Alimony</a></li>
-                                                <li class={getCurrentState(pageLocation, "chldspprt") ? `active` : ""}><a href="#chldspprt">Child Support</a></li>
-                                                <li class={getCurrentState(pageLocation, "rtrnrng") ? `active` : ""}><a href="#rtrnrng">Returning The Engagement Ring</a></li>
+                                                {
+                                                    familyLawsContent.map(
+                                                        (item, index) => (
+                                                            <>
+                                                                <li class={getClassForNav(scrollPos, index, item.id)}>
+                                                                    <a href={`#${item.id}`}
+                                                                        // onClick={
+                                                                        //     scrollToLink(item.id)
+                                                                        // }
+                                                                    >{item.heading}</a>
+                                                                </li>
+                                                            </>
+                                                        )
+                                                    )
+                                                }
                                             </ul>
                                         </div>
                                     </div>

@@ -2,10 +2,10 @@ import React from 'react'
 import { repeatingColorList } from '../../constants/JSONS'
 import AccordianImmi from './AccordianImmi'
 
-const ImmigrationLawsListsItem = ({ data }) => {
+const ImmigrationLawsListsItem = ({ classNm, data }) => {
     return (
         <>
-            <div class="contentBox brdrRadius4" id={data.id}>
+            <div class={`contentBox brdrRadius4 ${classNm}`} id={data.id}>
                 <h3 class="fontSize18 fontWeight700 primaryColor mb-0">
                     {data.heading}
                 </h3>
