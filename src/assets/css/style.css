@@ -3,29 +3,37 @@
 * {
   font-family: 'Open Sans', sans-serif;
 }
+
 .selector-for-some-widget {
   box-sizing: content-box;
 }
+
 /*--font family--*/
 .fontFamily2 {
   font-family: 'Unna', serif;
 }
+
 /*--colors--*/
 .primaryColor {
   color: #1A1846;
 }
+
 .secondaryColor {
   color: #F16B64;
 }
+
 .whiteColor {
   color: #fff;
 }
+
 .greenColor {
   color: #28BE94;
 }
+
 .bgWhite {
   background-color: white !important;
 }
+
 .bgGrey {
   background-color: #fafafa !important;
 }
@@ -198,7 +206,8 @@
   top: 0; */
   position: sticky;
   position: -webkit-sticky;
-  top: 0; /* required */
+  top: 0;
+  /* required */
   z-index: 999;
 }
 
@@ -934,3 +943,4 @@ span.crossBox {
   /* position: sticky; */
   /* padding-top: 200px; */
 }
+

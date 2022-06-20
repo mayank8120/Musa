@@ -7,7 +7,12 @@ const BannerSmallCards = ({ boxTitle, boxSpecificImage, mainDivColor }) => {
 
 
     const handleToggleModal = () => {
-        setShow(!show);
+        if (boxTitle === 'Marriage Records Search') {
+            setShow(!show);
+        } else {
+
+        }
+
     }
 
     return (
@@ -17,9 +22,9 @@ const BannerSmallCards = ({ boxTitle, boxSpecificImage, mainDivColor }) => {
                     <div class="d-flex align-items-top">
                         <img src={require(`../assets/img/${boxSpecificImage}.svg`).default} />
                         <div class="ms-auto">
-                            <a class="nextStepCircle brdrRadius50" onClick={handleToggleModal}>
+                            <span class="nextStepCircle brdrRadius50" onClick={handleToggleModal}>
                                 <img variant="primary" src={require('../assets/img/rightArrw.svg').default} alt="rightArrw" />
-                            </a>
+                            </span>
                         </div>
                     </div>
                     <div class="boxTitle">
