@@ -41,7 +41,7 @@ const Weddingceremonies = () => {
                         <div class="pageTitle">
                             <h1 class="fontSize32 fontWeight700 primaryColor fontFamily2">Religious, Spiritual, and Civil Wedding Ceremonies</h1>
                             <p class="mb-0 fontSize16 fontWeight400 primaryColor">What makes each different?</p>
-                           
+
                         </div>
                         <div class="row">
                             <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
@@ -56,15 +56,15 @@ const Weddingceremonies = () => {
                                                                 <>
                                                                     {
                                                                         index === 0 ?
-                                                                            <li>
-                                                                                <h6>Wedding Traditions and Superstitions</h6>
+                                                                            <li className='leftNavSUperParent'>
+                                                                                <h6 class='mb-0'>Wedding Traditions and Superstitions</h6>
                                                                             </li>
                                                                             :
                                                                             null}
                                                                     {
                                                                         index === 3 ?
-                                                                            <li>
-                                                                                <h6>Religious Wedding Ceremony Guide</h6>
+                                                                            <li className='leftNavSUperParent'>
+                                                                                <h6 class='mb-0'>Religious Wedding Ceremony Guide</h6>
                                                                             </li>
                                                                             :
                                                                             null
@@ -89,14 +89,14 @@ const Weddingceremonies = () => {
                                                             <>
                                                                 {
                                                                     index === 0 ?
-                                                                        <h3>Wedding Traditions and Superstitions</h3> : null
+                                                                        <h3 class='fontWeight700 primaryColor fontSize28 fontFamily2 pb-0 mb-24'>Wedding Traditions and Superstitions</h3> : null
                                                                 }
                                                                 {
                                                                     index === 3 ?
                                                                         <>
-                                                                            <h3>Religious Wedding Ceremony Guide: </h3>
-                                                                            <h3> Order of Events </h3>
-                                                                            <p>All wedding ceremonies tend to share the same basic order, but there are also many differences. Here’s a rundown of the most common religious ceremonies.</p>
+                                                                            <h3 class='fontWeight700 primaryColor fontSize28 fontFamily2'>Religious Wedding Ceremony Guide: <br /> Order of Events </h3>
+
+                                                                            <p class='fontWeight400 fontSize14'>All wedding ceremonies tend to share the same basic order, but there are also many differences. Here’s a rundown of the most common religious ceremonies.</p>
                                                                         </>
                                                                         :
                                                                         null

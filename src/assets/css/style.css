@@ -167,6 +167,10 @@
   margin-top: 24px;
 }
 
+.pb-24 {
+  padding-bottom: 24px;
+}
+
 /*--top Navbar--*/
 .topNavbr {
   padding: 16px 24px;
@@ -932,6 +936,7 @@ span.crossBox {
 .leftTabList {
   position: sticky;
   top: 200px;
+  margin-bottom: 24px;
 }
 
 
@@ -944,3 +949,16 @@ span.crossBox {
   /* padding-top: 200px; */
 }
 
+
+.leftNavSUperParent {
+  padding: 12px 0 !important;
+}
+
+.leftNavSUperParent h6 {
+  text-transform: uppercase;
+  /* padding: 12px 0 !important; */
+  color: rgba(26, 24, 70, 0.7);
+  font-weight: 600;
+  font-size: 12px;
+
+}
