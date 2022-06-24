@@ -198,59 +198,35 @@ export const repeatingColorList = ['greyBorder', 'orangeBorder', 'greenBorder', 
 export const navigationList = [
     {
         idname: 'fncs',
-        title: 'Fiances',
-        height: '232',
-        lb: '0',
-        ub: '892'
+        title: 'Fiances'
     },
     {
         idname: 'spss',
-        title: 'Spouses',
-        height: '892',
-        lb: '892',
-        ub: '1938'
+        title: 'Spouses'
     },
     {
         idname: 'grncrdsubdoc',
-        title: 'Green Cards Submission Documents',
-        height: '1938',
-        lb: '1938',
-        ub: '2716'
+        title: 'Green Cards Submission Documents'
     },
     {
         idname: 'grncrdappprcss',
-        title: 'Green Cards Application Process',
-        height: '2716',
-        lb: '2716',
-        ub: '2875'
+        title: 'Green Cards Application Process'
     },
     {
         idname: 'immiprocess',
-        title: 'Immigration Process & Interview',
-        height: '2875',
-        lb: '2875',
-        ub: '3768'
+        title: 'Immigration Process & Interview'
     },
     {
         idname: 'prepintrv',
-        title: 'Preparation for Interview',
-        height: '3768',
-        lb: '3768',
-        ub: '4567'
+        title: 'Preparation for Interview'
     },
     {
         idname: 'immifee',
-        title: 'Immigration Fees',
-        height: '4567',
-        lb: '4567',
-        ub: '5080'
+        title: 'Immigration Fees'
     },
     {
         idname: 'immires',
-        title: 'Immigration Resources',
-        height: '5080',
-        lb: '5080',
-        ub: '9999999999'
+        title: 'Immigration Resources'
     }
 ]
 

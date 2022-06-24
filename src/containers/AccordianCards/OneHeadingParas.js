@@ -1,27 +1,31 @@
 import React from 'react'
 import { Accordion } from 'react-bootstrap'
+import { removeAllSpaces } from '../../Functions/functions'
 
-const OneHeadingParas = ({ classNm, data }) => {
+const OneHeadingParas = ({ data, id }) => {
     return (
-        <>
+        <div id={id}>
 
-
-
-            <Accordion defaultActiveKey="0" className={`contentBox brdrRadius4 accordionBox`} alwaysOpen>
-                <Accordion.Item eventKey="0" alwaysOpen>
-                    <Accordion.Header>{data.title}</Accordion.Header>
-                    <Accordion.Body>
-                        {
-                            data.list.map(
-                                (listitem) => (
-                                    <p>{listitem}</p>
+            <div>
+                <Accordion defaultActiveKey="0" className={`contentBox brdrRadius4 accordionBox`} alwaysOpen>
+                    <Accordion.Item eventKey="0" alwaysOpen>
+                        <Accordion.Header>{data.title}</Accordion.Header>
+                        <Accordion.Body>
+                            {
+                                data.list.map(
+                                    (listitem) => (
+                                        <p>{listitem}</p>
+                                    )
                                 )
-                            )
-                        }
-                    </Accordion.Body>
-                </Accordion.Item>
-            </Accordion>
-        </>
+                            }
+                        </Accordion.Body>
+                    </Accordion.Item>
+                </Accordion>
+
+            </div>
+
+
+        </div>
     )
 }
 

@@ -69,12 +69,12 @@ const MarriageLaws = () => {
                                                         marriageLawsList.map(
                                                             (item, index) => (
                                                                 <>
-                                                                    {/* <li class={getClassForNav(scrollPos, index, item.idname)}>
-                                                                        <a href={`#${item.idname}`}>{item.title}</a>
-                                                                    </li> */}
-                                                                    <li >
+                                                                    <li class={getClassForNav(scrollPos, index, item.idname)}>
                                                                         <a href={`#${item.idname}`}>{item.title}</a>
                                                                     </li>
+                                                                    {/* <li >
+                                                                        <a href={`#${item.idname}`}>{item.title}</a>
+                                                                    </li> */}
                                                                 </>
                                                             )
                                                         )
@@ -86,22 +86,23 @@ const MarriageLaws = () => {
 
 
                                             <div class="tabsContantBox">
-                                                <OneHeadingBullets classNm={'dskhb'} data={MarriageIDRequirements} />
-                                                <OneHeadingParas data={MarriageResidencyRequirement} />
-                                                <InsideAccorList data={MarriageWaitingPeriodAfterApplication} />
-                                                <InsideAccorList data={MarriageWaitingPeriodAfterReceivingMarriageLicense} />
 
-                                                <OneHeadingParas data={MarriageLicenseFees} />
-                                                <OneHeadingParas data={MarriageBloodTestRequirements} />
-                                                <OneHeadingParas data={MarriageAgeRequirements} />
-                                                <OneHeadingParas data={ProxyMarriages} />
-                                                <OneHeadingParas data={CousinMarriages} />
-                                                <OneHeadingParas data={CommonLawMarriages} />
+                                                <OneHeadingBullets data={MarriageIDRequirements} id='MarriageIDRequirements' />
+                                                <OneHeadingParas data={MarriageResidencyRequirement} id='MarriageResidencyRequirement' />
+                                                <InsideAccorList data={MarriageWaitingPeriodAfterApplication} id='MarriageWaitingPeriodAfterApplication' />
+                                                <InsideAccorList data={MarriageWaitingPeriodAfterReceivingMarriageLicense} id='MarriageWaitingPeriodAfterReceivingMarriageLicense' />
 
-                                                <OneHeadingBullets data={WeddingOfficiantsRequirements} />
-                                                <OneHeadingParas data={MarriageWitnessesRequirements} />
-                                                <OneHeadingParas data={RecordingofMarriageLicenseafterMarriageCeremony} />
-                                                <OneHeadingParas data={MarriageCertificateafterMarriageCeremony} />
+                                                <OneHeadingParas data={MarriageLicenseFees} id='MarriageLicenseFees' />
+                                                <OneHeadingParas data={MarriageBloodTestRequirements} id='MarriageBloodTestRequirements' />
+                                                <OneHeadingParas data={MarriageAgeRequirements} id='MarriageAgeRequirements' />
+                                                <OneHeadingParas data={ProxyMarriages} id='ProxyMarriages' />
+                                                <OneHeadingParas data={CousinMarriages} id='CousinMarriages' />
+                                                <OneHeadingParas data={CommonLawMarriages} id='CommonLawMarriages' />
+
+                                                <OneHeadingBullets data={WeddingOfficiantsRequirements} id='WeddingOfficiantsRequirements' />
+                                                <OneHeadingParas data={MarriageWitnessesRequirements} id='MarriageWitnessesRequirements' />
+                                                <OneHeadingParas data={RecordingofMarriageLicenseafterMarriageCeremony} id='RecordingofMarriageLicenseafterMarriageCeremony' />
+                                                <OneHeadingParas data={MarriageCertificateafterMarriageCeremony} id='MarriageCertificateafterMarriageCeremony' />
 
                                             </div>
                                         </div>
