@@ -363,3 +363,220 @@ export const weddingCeremoniesList = [
         ]
     }
 ]
+
+
+
+
+
+export const marriageLawsList = [
+    {
+        title: "Marriage ID Requirements",
+        idname: 'MarriageIDRequirements'
+    },
+    {
+        title: 'Marriage Residency Requirement',
+        idname: 'MarriageResidencyRequirement'
+    },
+    {
+        title: 'Marriage Waiting Period After Application',
+        idname: 'MarriageWaitingPeriodAfterApplication'
+    },
+    {
+        title: 'Marriage Waiting Period After Receiving Marriage License',
+        idname: 'MarriageWaitingPeriodAfterReceivingMarriageLicense'
+    },
+    {
+        title: 'Marriage License Fees',
+        idname: 'MarriageLicenseFees'
+    },
+    {
+        title: 'Marriage Blood Test Requirements',
+        idname: 'MarriageBloodTestRequirements'
+    },
+    {
+        title: 'Marriage Age Requirements',
+        idname: 'MarriageAgeRequirements'
+    },
+    {
+        title: 'Proxy Marriages',
+        idname: 'ProxyMarriages'
+    },
+    {
+        title: 'Cousin Marriages',
+        idname: 'CousinMarriages'
+    },
+    {
+        title: 'Common Law Marriages',
+        idname: 'CommonLawMarriages'
+    },
+    {
+        title: 'Wedding Officiants Requirements',
+        idname: 'WeddingOfficiantsRequirements'
+    },
+    {
+        title: 'Marriage Witnesses Requirements',
+        idname: 'MarriageWitnessesRequirements'
+    },
+    {
+        title: 'Recording of Marriage License after Marriage Ceremony',
+        idname: 'RecordingofMarriageLicenseafterMarriageCeremony'
+    },
+    {
+        title: 'Marriage Certificate after Marriage Ceremony',
+        idname: 'MarriageCertificateafterMarriageCeremony'
+    }
+]
+
+
+
+export const MarriageIDRequirements = {
+    title: 'Marriage ID Requirements',
+    para: 'Present proof of birth facts and identification in the following form:',
+    list: ['Current drivers license',
+        'State-issued identification card',
+        'Birth certificate',
+        'Passport',
+        'Military ID',
+        'Alien Registration Card and Social Security Number'
+    ]
+}
+
+
+export const MarriageResidencyRequirement = {
+    title: 'Marriage Residency Requirement',
+    list: ['Most states in the U.S. do not require you to be a resident of the state in order to obtain a marriage license there.']
+}
+
+
+export const MarriageWaitingPeriodAfterApplication = {
+    title: 'Marriage Waiting Period After Application',
+    accordians: [
+        {
+            heading: '1 day',
+            AccList: ['South Carolina']
+        },
+        {
+            heading: '3 days',
+            AccList: ['Alaska', 'District of Columbia', 'Florida (upon completion of a pre-marital preparation course)', 'Kansas', 'Massachusetts', 'Michigan', 'New Jersey', 'New Jersey', 'Oregon', 'Pennsylvania', 'Washington']
+        },
+        {
+            heading: '5 days',
+            AccList: ['Minnesota']
+        },
+        {
+            heading: '6 days',
+            AccList: ['Wisconsin']
+        }
+    ]
+}
+
+
+
+export const MarriageWaitingPeriodAfterReceivingMarriageLicense = {
+    title: 'Marriage Waiting Period after Receiving Marriage License',
+    accordians: [
+        {
+            heading: '1 day',
+            AccList: ['Delaware',
+                'Illinois',
+                'New York']
+        },
+        {
+            heading: '2 days',
+            AccList: [
+                'Maryland'
+            ]
+        },
+        {
+            heading: '3 days',
+            AccList: [
+                'Iowa',
+                'Louisiana',
+                'Texas'
+            ]
+        }
+    ]
+}
+
+
+export const MarriageLicenseFees = {
+    title: 'Marriage License Fees',
+    list: [
+        'Fees for marriage licenses range from a low of $10 to as much as $115. The cost varies based on county, city or municipality, residential status, and in some cases, completion of a pre-marital counseling or education course. A few states, have standard, statewide fees. Preferred method of payment is cash. For guidance on additional methods of payment, please call ahead.'
+    ]
+}
+
+
+export const MarriageBloodTestRequirements = {
+    title: 'Marriage Blood Test Requirements',
+    list: ['Blood tests are no longer required in all states. Montana (PDF) is the one state which requires both spouses intending to get married to get a blood test as one of their marriage license requirements.']
+}
+
+
+export const MarriageAgeRequirements = {
+    title: 'Marriage Age Requirements',
+    list: [
+        'In the United States, all but one state requires that a couple be 18 in order to marry without parental permission.',
+        'Nebraska sets the age of majority at 19. Although a few states will waive this requirement if there is a pregnancy, the couple may still have to have court approval.',
+        'Delware, Florida, Georgia, Kentucky, Maryland, and Oklahoma: Allow pregnant teens or teens who have already had a child to get married without parental consent.',
+        'However in Florida, Kentucky, and Oklahoma, the young couple must have authorization from a court.',
+        'Maryland requires that the minor be at least 16. Even with parental approval, many states will require court approval when a person is 16 years of age or less.'
+    ]
+}
+
+export const ProxyMarriages = {
+    title: 'Proxy Marriages',
+    list: [
+        'A proxy marriage, or marriage by proxy, is when one or both parties are not present at a proxy ceremony, but are represented by others. Only four states allow proxy marriages: California, Colorado, Montana, and Texas. With the exception of Montana, each of these states require one of the spouses to appear before the civil authorities. Montana, however, allows a “Double Proxy” marriage, where proxies may appear, in place of both parties.'
+    ]
+}
+
+
+export const CousinMarriages = {
+    title: 'Cousin Marriages',
+    list: [
+        'All states allow the marriage of second cousins.',
+
+        'Twenty states (20) and the District of Columbia allow first-cousins to marry:  Alabama, Alaska, California, Colorado, Connecticut, Florida, Georgia, Hawaii, Maryland, Massachusetts, Missouri, New Jersey, New Mexico, New York, North Carolina, Rhode Island, South Carolina, Tennessee, Vermont, Virginia',
+
+        'Six (6) states permit first-cousin marriage only under certain circumstances:  Arizona, Illinois, Indiana, Maine, Utah, Wisconsin.',
+
+        'Twenty-four (24) states prohibit marriages between first-cousins:  Arkansas, Delaware, Idaho, Iowa, Kansas, Kentucky, Louisiana, Michigan, Minnesota, Mississippi, Nebraska, Nevada, New Hampshire, North Dakota, Ohio, Oklahoma, Oregon, Pennsylvania, South Dakota, Texas, Washington, West Virginia, Wyoming'
+    ]
+}
+
+
+export const CommonLawMarriages = {
+    title: 'Common Law Marriages',
+    list: ['States that recognize these marriages:  Alabama, Colorado, District of Columbia, Georgia (if created before 1/1/97), Idaho (if created before 1/1/96), Iowa, Kansas, Montana, New Hampshire (for inheritance purposes only, and the recognition begins only after the first spouse dies.), Ohio (if created before 10/10/91), Oklahoma (possibly only if created before 11/1/98), Pennsylvania (if created before 1/1/05), Rhode Island, South Carolina, Texas, Utah']
+}
+
+export const WeddingOfficiantsRequirements = {
+    title: 'Wedding Officiants Requirements',
+    para: 'Performance of a marriage ceremony with witnesses and a person recognized by the state to have the authority to perform marriage ceremony (such as a priest, rabbi or a judge).',
+    list: [
+        'A religious ceremony should be conducted under the customs of the religion, or, in the case of a Native American group, under the customs of the tribe. Religious ceremonies normally are conducted by religious officials, such as ministers, priests, or rabbis. Native American ceremonies may be presided over by a tribal chief or other designated official.',
+        'Civil ceremonies usually are conducted by judges. In some states, county clerks or other government officials may conduct civil ceremonies. Contrary to some popular legends, no state authorizes ship captains to perform marriages.'
+    ]
+}
+
+
+export const MarriageWitnessesRequirements = {
+    title: 'Marriage Witnesses Requirements',
+    list: [
+        'Most states require both spouses, along with the person who officiated and one or two witnesses age 18 or older, to sign the marriage certificate.'
+    ]
+}
+
+export const RecordingofMarriageLicenseafterMarriageCeremony = {
+    title: 'Recording of Marriage License after Marriage Ceremony',
+    list: ['The person who performs the marriage ceremony has a duty to send a copy of the marriage certificate to the county or state agency that records marriage certificates. Failure to send the marriage certificate to the appropriate agency does not necessarily nullify the marriage, but it may make proof of the marriage more difficult.']
+}
+
+export const MarriageCertificateafterMarriageCeremony = {
+    title: 'Marriage Certificate after Marriage Ceremony',
+    list: [
+        'Most recording agencies offer you the oportunity to purchase a certified copy of your marriage certificate at the time you buy your marriage license, and as soon a your marriage has been recorded it is picked-up or mailed to you. Others, you must request and pay an additional fee to receive an official (certified) copy of your marriage certificate.'
+    ]
+}
+

@@ -13,105 +13,11 @@ const ImmigrationLaws = () => {
 
     const pageLocation = window.location.href;
 
-    // const [pageScrollHeight, setpageScrollHeight] = useState(0);
-
-    // const getClassName = (loca, index, idname) => {
-    //     if (index == 0) {
-    //         return getLocationParaCount(loca) == 1 || getCurrentHash(loca, idname) === true ? `active` : ""
-    //     } else {
-    //         return getCurrentHash(loca, idname) === true ? `active` : "";
-    //     }
-    // }
-
-
-
-    // let scrollHeight = window.pageYOffset;
-
-    // const getClassName = (height, lb, ub) => {
-
-    //     let h = parseFloat(height);
-    //     let l = parseFloat(lb);
-    //     let u = parseFloat(ub);
-
-    //     let re = ''
-    //     if (h <= u && h >= l) {
-    //         // console.log("ACT");
-    //         re = 'active'
-    //     } else {
-    //         // console.log("EMP");
-    //         re = '';
-    //     }
-    //     return re;
-    // }
 
 
 
     const scrollPos = useScrollPositionHook();
     console.log(scrollPos);
-
-
-    // let getCardLb = (id) => {
-    //     return document.getElementById(`${id}`).offsetTop;
-    // }
-
-    // let getCardUb = (id) => {
-    //     return document.getElementById(`${id}`).offsetTop + document.getElementById(`${id}`).offsetHeight;
-    // }
-
-
-    // let getClassForNav = (height, index, id) => {
-    //     let h = parseFloat(height);
-    //     let ret = '';
-    //     if (h < 190) {
-    //         if (index === 0) {
-    //             ret = 'active';
-    //         } else {
-    //             ret = '';
-    //         }
-    //     } else {
-    //         let l = parseFloat(getCardLb(id)) - 190;
-    //         let u = parseFloat(getCardUb(id)) - 190;
-    //         if (h <= u && h >= l) {
-    //             ret = 'active'
-    //         } else {
-    //             ret = '';
-    //         }
-    //     }
-    //     return ret;
-    // }
-
-
-
-
-
-
-    // useEffect(() => {
-    //     console.log(window.pageYOffset);
-    // }, [window.pageYOffset]);
-
-
-    // window.addEventListener('scroll', (event) => {
-    //     if (window.pageYOffset !== pageScrollHeight) {
-    //         setpageScrollHeight(window.pageYOffset);
-    //     }
-    // });
-
-
-
-
-
-
-    // if (scrollPos > 50) {
-    //     console.log("JJJJJJ");
-    // }
-
-
-    // function hello() {
-    //     // window.scrollBy(0, 740);
-    //     window.scrollTo(0, 1130);
-    //     console.log(window.pageYOffset, "JAADU");
-    // }
-
 
     return (
         <div className='bgGrey'>
@@ -158,20 +64,9 @@ const ImmigrationLaws = () => {
                                                     navigationList.map(
                                                         (item, index) => (
                                                             <>
-                                                                {/* // <li class={getLocationParaCount(pageLocation) == 1 || getCurrentHash(pageLocation, `${item.idname}`) === true ? `active` : ""}><a href={`${item.idname}`}>{item.title}</a></li> */}
-
-
-                                                                {/* <li class={
-                                                                    getClassName(scrollHeight, item.lb, item.ub)
-                                                                    // `active`
-                                                                }><a href={`#${item.idname}`}>{item.title}</a></li> */}
-
-
-                                                                <li class={
-                                                                    getClassForNav(scrollPos, index, item.idname)
-                                                                    // `active`
-                                                                }><a href={`#${item.idname}`}>{item.title}</a></li>
-
+                                                                <li class={getClassForNav(scrollPos, index, item.idname)}>
+                                                                    <a href={`#${item.idname}`}>{item.title}</a>
+                                                                </li>
                                                             </>
                                                         )
                                                     )

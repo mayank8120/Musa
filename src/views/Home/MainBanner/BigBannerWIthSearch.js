@@ -9,9 +9,8 @@ const BigBannerWIthSearch = () => {
             <div class="col-lg-7">
                 <div class="bannerSection">
                     <div class="bannerContent">
-                        <img src={require('../../../assets/img/logo.svg').default} />
-                        <h1 class="whiteColor fontWeight700 fontFamily2">We help you find everything about marriage through the
-                            whole USA</h1>
+                        {/* <img src={require('../../../assets/img/logo.svg').default} /> */}
+                        <h1 class="whiteColor fontWeight700 fontFamily2">Find Marriage Laws in the United States</h1>
                         {/* <!--search Bar--> */}
                         <div class="usMarr_searchBar">
                             <div class="white_Box d-flex align-items-center">

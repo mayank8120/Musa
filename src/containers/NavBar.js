@@ -65,19 +65,19 @@ const NavBar = () => {
                             <div class="collapse navbar-collapse" id="navbarText">
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                     <li class="nav-item">
-                                        <NavLink exact activeClassName="navLinksActiveclass" to="/state">Marriage Laws</NavLink>
+                                        <NavLink exact activeClassName="navLinksActiveclass" to="/marriage-laws">Marriage Laws</NavLink>
                                         {/* <a class="nav-link" href="/state">Marriage Laws</a> */}
                                     </li>
                                     <li class="nav-item">
-                                        <NavLink exact activeClassName="navLinksActiveclass" to="/immigrationLaws">Immigration Laws</NavLink>
+                                        <NavLink exact activeClassName="navLinksActiveclass" to="/immigration-laws">Immigration Laws</NavLink>
                                         {/* <a class="nav-link" href="/immigrationLaws">Immigration Laws</a> */}
                                     </li>
                                     <li class="nav-item">
-                                        <NavLink exact activeClassName="navLinksActiveclass" to="/familyLaws">Family Laws</NavLink>
+                                        <NavLink exact activeClassName="navLinksActiveclass" to="/family-laws">Family Laws</NavLink>
                                         {/* <a class="nav-link" href="/familyLaws">Family Laws</a> */}
                                     </li>
                                     <li class="nav-item">
-                                        <NavLink exact activeClassName="navLinksActiveclass" to="/weddingCeremonies">Wedding Ceremonies</NavLink>
+                                        <NavLink exact activeClassName="navLinksActiveclass" to="/wedding-ceremonies">Wedding Ceremonies</NavLink>
                                         {/* <a class="nav-link" href="#">Wedding Ceremonies</a> */}
                                     </li>
                                 </ul>

@@ -10,19 +10,19 @@ const BannerSmallCards = ({ boxTitle, boxSpecificImage, mainDivColor }) => {
         if (boxTitle === 'Marriage Records Search') {
             setShow(!show);
         } else {
-
         }
-
     }
+
+
 
     return (
         <>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" onClick={handleToggleModal}>
                 <div class={`${mainDivColor} brdrRadius4 colordBox`}>
                     <div class="d-flex align-items-top">
                         <img src={require(`../assets/img/${boxSpecificImage}.svg`).default} />
                         <div class="ms-auto">
-                            <span class="nextStepCircle brdrRadius50" onClick={handleToggleModal}>
+                            <span class="nextStepCircle brdrRadius50">
                                 <img variant="primary" src={require('../assets/img/rightArrw.svg').default} alt="rightArrw" />
                             </span>
                         </div>
@@ -34,8 +34,6 @@ const BannerSmallCards = ({ boxTitle, boxSpecificImage, mainDivColor }) => {
             </div>
 
             <Modal show={show} onHide={handleToggleModal} className="usMarr_Modal" centered>
-                {/* <Modal.Header closeButton>
-                </Modal.Header> */}
                 <Modal.Body>
                     <div>
                         <div className="modal_title">

@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
+import GovtIssueComponent from '../../containers/GovtIssuedcard/GovtIssueComponent'
 import MarriageLicenseApplicationProcedure from '../../containers/MarriageLicenseApplicationProcedure'
 import MarriageLicenseCard from '../../containers/MarriageLicenseCard'
 import StateListAndSearch from '../../containers/StateListAndSearch'
-import GovtIssueComponent from '../GovtIssuedcard/GovtIssueComponent'
 import MainBanner from './MainBanner/MainBanner'
 
 

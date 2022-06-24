@@ -1,15 +1,15 @@
 import React from 'react'
 import BannerSmallCards from '../../containers/BannerSmallCards'
 import Footer from '../../containers/Footer'
+import GovtIssueComponent from '../../containers/GovtIssuedcard/GovtIssueComponent'
 import MarriageLicenseApplicationProcedure from '../../containers/MarriageLicenseApplicationProcedure'
 import NavBar from '../../containers/NavBar'
 import StateListAndSearch from '../../containers/StateListAndSearch'
-import GovtIssueComponent from '../GovtIssuedcard/GovtIssueComponent'
 import StatePageMidSection from './StatePageMidSection'
 
 
 
-const StatePage = () => {
+const StateDetailPage = () => {
     return (
         <div class='bgGrey'>
 
@@ -37,4 +37,4 @@ const StatePage = () => {
     )
 }
 
-export default StatePage
+export default StateDetailPage

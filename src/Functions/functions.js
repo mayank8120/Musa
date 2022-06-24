@@ -86,6 +86,10 @@ export let getClassForNav = (height, index, id) => {
 
 
 
+export const removeAllSpaces = (str) => {
+    return str.replace(/\s/g, '');
+}
+
 
 
 
