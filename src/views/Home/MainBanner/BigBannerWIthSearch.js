@@ -7,7 +7,7 @@ const BigBannerWIthSearch = () => {
         <>
 
             <div class="col-lg-7">
-                <div class="bannerSection">
+                <div class="bannerSection brdrRadius4">
                     <div class="bannerContent">
                         {/* <img src={require('../../../assets/img/logo.svg').default} /> */}
                         <h1 class="whiteColor fontWeight700 fontFamily2">Find Marriage Laws in the United States</h1>

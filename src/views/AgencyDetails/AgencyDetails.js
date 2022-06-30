@@ -11,16 +11,12 @@ import StateWiseList from '../MarriageLawsStateDetailPage/StateWiseList'
 
 import { Accordion } from 'react-bootstrap'
 import CheckAvailabilityForm from '../../containers/CheckAvailabilityForm'
+import FooterSearch from '../../containers/FooterSearch'
 
 const AgencyDetails = () => {
     return (
         <>
-
-
-
             <div class='bgGrey'>
-
-
                 {/* <!--breadcrumb--> */}
                 <div class="usMarr_breadcrumb">
                     <div class="container">
@@ -28,29 +24,90 @@ const AgencyDetails = () => {
                             <ol class="breadcrumb mb-0">
                                 <li class="breadcrumb-item fontSize14"><a href="#">Home</a></li>
                                 <li class="breadcrumb-item active fontSize14" aria-current="page">Los Angeles</li>
+                                <li class="breadcrumb-item active fontSize14" aria-current="page">Norwalk Los Angeles County Long Name Example</li>
                             </ol>
                         </nav>
                     </div>
                 </div>
                 <div class="usMarr_page">
                     <div class="container">
-
                         <div class="row">
-
-
                             {/* LEFT SIDE SECTION  */}
-
-                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12  mb-24">
                                 <div class="stateLeftPage">
-
-
-
-
+                                    <div class="agencyDetSummary brdrRadius4">
+                                        <h2 class="fontSize32 fontWeight700 primaryColor fontFamily2">Norwalk Los Angeles County</h2>
+                                        <p class="fontSize16 fontWeight400 primaryColor">12400 East Imperial Hwy. Norwalk, CA 90650</p>
+                                        <div class="otherInfo">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                                    <div class="infoSecBlock">
+                                                        <div class="topInfo d-flex align-items-start">
+                                                            <div>
+                                                                <img variant="primary" src={require('../../assets/img/phoneIcon.svg').default} alt="rightArrw" />
+                                                            </div>
+                                                            <div>
+                                                                <p class="primaryColor fontSize16 fontWeight700 mb-0">800.201.8999</p>
+                                                                <p class="fontSize14 fontWeight400 primaryColorOpacity7 mb-0">Phone Number</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                                    <div class="infoSecBlock">
+                                                        <div class="topInfo d-flex align-items-start">
+                                                            <div>
+                                                                <img variant="primary" src={require('../../assets/img/phoneIcon.svg').default} alt="rightArrw" />
+                                                            </div>
+                                                            <div>
+                                                                <p class="primaryColor fontSize16 fontWeight700 mb-0">562.462.2137</p>
+                                                                <p class="fontSize14 fontWeight400 primaryColorOpacity7 mb-0">Secondary Phone Number</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                                    <div class="infoSecBlock">
+                                                        <div class="topInfo d-flex align-items-start">
+                                                            <div>
+                                                                <img variant="primary" src={require('../../assets/img/phoneIcon.svg').default} alt="rightArrw" />
+                                                            </div>
+                                                            <div>
+                                                                <p class="primaryColor fontSize16 fontWeight700 mb-0">8:00 a.m. – 5:00 p.m. / M – F</p>
+                                                                <p class="fontSize14 fontWeight400 primaryColorOpacity7 mb-0">Opening Hours</p>
+                                                                <p class="fontSize14 fontWeight400 primaryColorOpacity7 mb-0">(except for Court Approved Holidays)</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="brdrLine"></div>
+                                        <div class="lowerOtherInfo">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                                    <div>
+                                                        <h3 class="fontSize18 fontWeight700 primaryColor">License Fees</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                                    <div>
+                                                        <h3 class="fontSize24 fontWeight700 mb-0">$91</h3>
+                                                        <p class="mb-0 fontSize14 fontWeight400 primaryColorOpacity7">Public License Fee</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                                    <div>
+                                                        <h3 class="fontSize24 fontWeight700 mb-0">$85</h3>
+                                                        <p class="mb-0 fontSize14 fontWeight400 primaryColorOpacity7">Confidential License Fee</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="">
                                         <h1 class="fontSize32 fontWeight700 primaryColor fontFamily2">Marriage Application Requirement California</h1>
                                     </div>
-
-
                                     <div>
                                         <div class="stateDetlInfo brdrRadius4 bgWhite">
                                             <div>
@@ -87,7 +144,7 @@ const AgencyDetails = () => {
 
                                     <div>
                                         <div class="stateDetlInfo brdrRadius4 bgWhite">
-                                            <Accordion defaultActiveKey="0" className={`accordionBox`} alwaysOpen>
+                                            <Accordion defaultActiveKey="0" className={`accordionBox parentAccordion`} alwaysOpen>
                                                 <Accordion.Item eventKey="0" alwaysOpen>
                                                     <Accordion.Header>Marriage ID Requirements</Accordion.Header>
                                                     <Accordion.Body>
@@ -101,7 +158,7 @@ const AgencyDetails = () => {
 
                                     <div>
                                         <div class="stateDetlInfo brdrRadius4 bgWhite">
-                                            <Accordion defaultActiveKey="0" className={`accordionBox`} alwaysOpen>
+                                            <Accordion defaultActiveKey="0" className={`accordionBox parentAccordion`} alwaysOpen>
                                                 <Accordion.Item eventKey="0" alwaysOpen>
                                                     <Accordion.Header>Marriage Waiting Period</Accordion.Header>
                                                     <Accordion.Body>
@@ -118,7 +175,7 @@ const AgencyDetails = () => {
 
                                     <div>
                                         <div class="stateDetlInfo brdrRadius4 bgWhite">
-                                            <Accordion defaultActiveKey="0" className={`accordionBox`} alwaysOpen>
+                                            <Accordion defaultActiveKey="0" className={`accordionBox parentAccordion`} alwaysOpen>
                                                 <Accordion.Item eventKey="0" alwaysOpen>
                                                     <Accordion.Header>Marriage Residency Requirement</Accordion.Header>
                                                     <Accordion.Body>
@@ -138,7 +195,7 @@ const AgencyDetails = () => {
 
                                     <div>
                                         <div class="stateDetlInfo brdrRadius4 bgWhite">
-                                            <Accordion defaultActiveKey="0" className={`accordionBox`} alwaysOpen>
+                                            <Accordion defaultActiveKey="0" className={`accordionBox parentAccordion`} alwaysOpen>
                                                 <Accordion.Item eventKey="0" alwaysOpen>
                                                     <Accordion.Header>Marriage Residency Requirement</Accordion.Header>
                                                     <Accordion.Body>
@@ -161,7 +218,7 @@ const AgencyDetails = () => {
 
                                     <div>
                                         <div class="stateDetlInfo brdrRadius4 bgWhite">
-                                            <Accordion defaultActiveKey="0" className={`accordionBox`} alwaysOpen>
+                                            <Accordion defaultActiveKey="0" className={`accordionBox parentAccordion`} alwaysOpen>
                                                 <Accordion.Item eventKey="0" alwaysOpen>
                                                     <Accordion.Header>Proxy Marriages</Accordion.Header>
                                                     <Accordion.Body>
@@ -184,7 +241,7 @@ const AgencyDetails = () => {
 
                                     <div>
                                         <div class="stateDetlInfo brdrRadius4 bgWhite">
-                                            <Accordion defaultActiveKey="0" className={`accordionBox`} alwaysOpen>
+                                            <Accordion defaultActiveKey="0" className={`accordionBox parentAccordion`} alwaysOpen>
                                                 <Accordion.Item eventKey="0" alwaysOpen>
                                                     <Accordion.Header>Cousin Marriages</Accordion.Header>
                                                     <Accordion.Body>
@@ -207,7 +264,7 @@ const AgencyDetails = () => {
 
                                     <div>
                                         <div class="stateDetlInfo brdrRadius4 bgWhite">
-                                            <Accordion defaultActiveKey="0" className={`accordionBox`} alwaysOpen>
+                                            <Accordion defaultActiveKey="0" className={`accordionBox parentAccordion`} alwaysOpen>
                                                 <Accordion.Item eventKey="0" alwaysOpen>
                                                     <Accordion.Header>Common Law Marriages</Accordion.Header>
                                                     <Accordion.Body>
@@ -233,7 +290,7 @@ const AgencyDetails = () => {
 
                                     <div>
                                         <div class="stateDetlInfo brdrRadius4 bgWhite">
-                                            <Accordion defaultActiveKey="0" className={`accordionBox`} alwaysOpen>
+                                            <Accordion defaultActiveKey="0" className={`accordionBox parentAccordion`} alwaysOpen>
                                                 <Accordion.Item eventKey="0" alwaysOpen>
                                                     <Accordion.Header>Marriage Blood Test</Accordion.Header>
                                                     <Accordion.Body>
@@ -261,7 +318,7 @@ const AgencyDetails = () => {
 
                                     <div>
                                         <div class="stateDetlInfo brdrRadius4 bgWhite">
-                                            <Accordion defaultActiveKey="0" className={`accordionBox`} alwaysOpen>
+                                            <Accordion defaultActiveKey="0" className={`accordionBox parentAccordion`} alwaysOpen>
                                                 <Accordion.Item eventKey="0" alwaysOpen>
                                                     <Accordion.Header>Name Change</Accordion.Header>
                                                     <Accordion.Body>
@@ -285,7 +342,7 @@ const AgencyDetails = () => {
 
                                     <div>
                                         <div class="stateDetlInfo brdrRadius4 bgWhite">
-                                            <Accordion defaultActiveKey="0" className={`accordionBox`} alwaysOpen>
+                                            <Accordion defaultActiveKey="0" className={`accordionBox parentAccordion`} alwaysOpen>
                                                 <Accordion.Item eventKey="0" alwaysOpen>
                                                     <Accordion.Header>Marriage Age Requirements</Accordion.Header>
                                                     <Accordion.Body>
@@ -307,7 +364,7 @@ const AgencyDetails = () => {
 
                                     <div>
                                         <div class="stateDetlInfo brdrRadius4 bgWhite">
-                                            <Accordion defaultActiveKey="0" className={`accordionBox`} alwaysOpen>
+                                            <Accordion defaultActiveKey="0" className={`accordionBox parentAccordion`} alwaysOpen>
                                                 <Accordion.Item eventKey="0" alwaysOpen>
                                                     <Accordion.Header>Marriage Officiants</Accordion.Header>
                                                     <Accordion.Body>
@@ -355,7 +412,7 @@ const AgencyDetails = () => {
 
                                     <div>
                                         <div class="stateDetlInfo brdrRadius4 bgWhite">
-                                            <Accordion defaultActiveKey="0" className={`accordionBox`} alwaysOpen>
+                                            <Accordion defaultActiveKey="0" className={`accordionBox parentAccordion`} alwaysOpen>
                                                 <Accordion.Item eventKey="0" alwaysOpen>
                                                     <Accordion.Header>Marriage Witnesses</Accordion.Header>
                                                     <Accordion.Body>
@@ -383,7 +440,7 @@ const AgencyDetails = () => {
 
                                     <div>
                                         <div class="stateDetlInfo brdrRadius4 bgWhite">
-                                            <Accordion defaultActiveKey="0" className={`accordionBox`} alwaysOpen>
+                                            <Accordion defaultActiveKey="0" className={`accordionBox parentAccordion`} alwaysOpen>
                                                 <Accordion.Item eventKey="0" alwaysOpen>
                                                     <Accordion.Header>Expiration Date of Marriage License</Accordion.Header>
                                                     <Accordion.Body>
@@ -413,7 +470,7 @@ const AgencyDetails = () => {
 
                                     <div>
                                         <div class="stateDetlInfo brdrRadius4 bgWhite">
-                                            <Accordion defaultActiveKey="0" className={`accordionBox`} alwaysOpen>
+                                            <Accordion defaultActiveKey="0" className={`accordionBox parentAccordion`} alwaysOpen>
                                                 <Accordion.Item eventKey="0" alwaysOpen>
                                                     <Accordion.Header>Copy of Certificate of Marriage License</Accordion.Header>
                                                     <Accordion.Body>
@@ -427,27 +484,8 @@ const AgencyDetails = () => {
                                             </Accordion>
                                         </div>
                                     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                                 </div>
                             </div>
-
-
 
                             {/* RIght SIDE SECTION  */}
 
@@ -456,18 +494,27 @@ const AgencyDetails = () => {
 
                                     <CheckAvailabilityForm />
 
-
-                                    <BannerSmallCards
-                                        mainDivColor={'marriage_Record'}
-                                        boxSpecificImage={`marrgeRecord`}
-                                        boxTitle={"Marriage Records Search"} />
-                                    <div class="creditScore mb-24">
-                                        <img class="" src={require('../../assets/img/creditScore.png').default} />
+                                    <div class="w-302 mb-24">
+                                        <BannerSmallCards
+                                            mainDivColor={'marriage_Record'}
+                                            boxSpecificImage={`marrgeRecord`}
+                                            boxTitle={"Marriage Records Search"} />
                                     </div>
-                                    <BannerSmallCards
-                                        mainDivColor={'divorce_recod'}
-                                        boxSpecificImage={'wedngLaws'}
-                                        boxTitle={'Divorce Records Search'} />
+
+                                    <div class="w-302 mb-24">
+                                        <div class="creditScore mb-24">
+                                            <img class="" src={require('../../assets/img/creditScore.png').default} />
+                                        </div>
+                                    </div>
+
+                                    <div class="w-302 mb-24">
+                                        <BannerSmallCards
+                                            mainDivColor={'divorce_recod'}
+                                            boxSpecificImage={'wedngLaws'}
+                                            boxTitle={'Divorce Records Search'} />
+                                    </div>
+
+
                                 </div>
                             </div>
                         </div>
@@ -477,6 +524,8 @@ const AgencyDetails = () => {
             </div>
 
 
+
+            <FooterSearch />
 
 
         </>

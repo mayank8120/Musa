@@ -1,11 +1,11 @@
 import React from 'react'
 import { Accordion } from 'react-bootstrap'
 
-const AccordianImmi = ({ data ,color}) => {
+const AccordianImmi = ({ data, color }) => {
     return (
         <>
 
-            <Accordion defaultActiveKey="0" className={`accordionBox ${color}`} alwaysOpen>
+            <Accordion defaultActiveKey="0" className={`childAcc accordionBox ${color} `} alwaysOpen>
                 <Accordion.Item eventKey="0" alwaysOpen>
                     <Accordion.Header>{data.heading}</Accordion.Header>
                     <Accordion.Body>

@@ -18,8 +18,17 @@
   color: #1A1846;
 }
 
+.primaryColorOpacity7 {
+  color: #1A1846;
+  opacity: 0.7;
+}
+
 .secondaryColor {
   color: #F16B64;
+}
+
+.tertiaryColor {
+  color: #323237;
 }
 
 .whiteColor {
@@ -28,6 +37,10 @@
 
 .greenColor {
   color: #28BE94;
+}
+
+.orangeColor {
+  color: #F16B64;
 }
 
 .bgWhite {
@@ -81,6 +94,10 @@
 
 .fontSize32 {
   font-size: 32px;
+}
+
+.fontSize40 {
+  font-size: 40px;
 }
 
 /*--font weight--*/
@@ -275,32 +292,40 @@
   background-repeat: no-repeat;
   height: 536px;
   position: relative;
+  overflow: hidden;
 }
 
-.bannerContent {
-  max-width: 628px;
+.bannerSection::after {
+  content: "";
+  background: linear-gradient(180deg, #F16B64 0%, rgba(241, 107, 100, 0) 100%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 252px;
+  width: 100%;
+  transform: rotate(-180deg);
+  opacity: 0.6;
 }
 
 .bannerContent h1 {
   line-height: 46px;
   margin-top: 26.5px;
-  margin-bottom: 40px;
+  margin-bottom: 16px;
 }
 
 .bannerContent {
   position: absolute;
   bottom: 40px;
   left: 40px;
+  z-index: 9;
 }
 
 /*--search Bar--*/
 .white_Box {
   background-color: #fff;
   padding: 12px;
-  border: 1px solid rgba(26, 24, 70, 0.1);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
   border-radius: 4px;
-  outline: 2px solid #f2f2f2;
   height: 72px;
 }
 
@@ -320,10 +345,15 @@
 
 .colordBox {
   padding: 24px;
-  width: 264px;
-  height: 264px;
-  margin-bottom: 8px;
+  width: 100%;
+  height: 100%;
+  /* margin-bottom: 8px; */
   position: relative;
+  cursor: pointer;
+}
+
+.colordBox:hover {
+  box-shadow: 0px 16px 64px rgba(50, 50, 50, 0.24);
 }
 
 .nextStepCircle {
@@ -333,7 +363,6 @@
   background-color: rgba(0, 0, 0, 0.1);
   text-align: center;
   line-height: 37px;
-  cursor: pointer;
 }
 
 .boxTitle {
@@ -417,13 +446,13 @@
 
 .procdrNumber {
   display: inline-block;
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   background: #1A1846;
   border: 3px solid #FEF1F0;
   color: #fff;
   text-align: center;
-  line-height: 20px;
+  line-height: 21px;
   font-size: 13px;
   position: absolute;
   bottom: -5px;
@@ -608,7 +637,7 @@
   margin: 24px 0;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
   border: 1px solid rgba(26, 24, 70, 0.1);
-  padding: 16px;
+  padding: 24px;
 }
 
 .chevronRight {
@@ -961,4 +990,261 @@ span.crossBox {
   font-weight: 600;
   font-size: 12px;
 
+}
+
+/*--mrriage license--*/
+.marrLicense {
+  background: linear-gradient(0deg, #FFFBFB, #FFFBFB), #2CA664;
+  padding: 40px;
+}
+
+.topTittle h5,
+.topTittle h3 {
+  margin-bottom: 8px;
+}
+
+.marrigeLicense_grid {
+  margin-top: 56px;
+}
+
+.licenseList span {
+  display: inline-block;
+  border: 3px solid rgba(241, 107, 100, 0.05);
+  border-radius: 8px;
+  width: 56px;
+  height: 56px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 50px;
+  margin-right: 16px;
+}
+
+.licenseList {
+  margin-top: 24px;
+}
+
+.longSearchBar {
+  margin-bottom: 24px;
+}
+
+.marrigeLawsStateList {
+  margin-bottom: 40px;
+}
+
+.accordion-item {
+  border: none;
+}
+
+.accordion-item .accordion-item {
+  border: 1px solid rgba(26, 24, 70, 0.1);
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+/*--footer search--*/
+.footerSearch {
+  background-image: url("../img/footerBack.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 320px;
+  position: relative;
+  overflow: hidden;
+  padding: 87px;
+}
+
+.footerSearch::after {
+  content: "";
+  background: linear-gradient(1.67deg, #1A1846 12.7%, rgba(26, 24, 70, 0) 65.72%);
+  opacity: 0.5;
+  width: 100%;
+  height: 320px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.footerSearchContent h3 {
+  margin-bottom: 32px;
+}
+
+.footerSearchContent {
+  max-width: 628px;
+  margin: 0 auto;
+}
+
+.moreInfoBtn button,
+.btn-primary:focus {
+  padding: 12px 24px;
+  background: #28BE94;
+  border-radius: 4px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border: 1px solid #28BE94;
+}
+
+.moreInfoBtn button:hover {
+  background: #fff;
+  color: #28BE94;
+  border: 1px solid #28BE94;
+  box-shadow: none;
+}
+
+/*--agency detail--*/
+.agencyDetSummary {
+  border: 1px solid rgba(26, 24, 70, 0.1);
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  margin-bottom: 40px;
+}
+
+.otherInfo {
+  margin-top: 33px;
+}
+
+.topInfo img {
+  margin-right: 8px;
+}
+
+.brdrLine {
+  border-top: 1px solid rgba(26, 24, 70, 0.1);
+  margin: 32px -24px;
+}
+
+/*--check availability--*/
+.checkAvail {
+  padding: 16px;
+  border: 1px solid rgba(26, 24, 70, 0.1);
+  background: #FFFFFF;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+
+.checkAvail p {
+  margin-bottom: 24px;
+}
+
+.formInput {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.formInput img {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.formInput input {
+  padding-left: 42px;
+  border: 1px solid rgba(26, 24, 70, 0.1);
+  border-radius: 4px;
+  height: 44px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.formInput input:focus {
+  border: 1px solid #F16B64;
+  box-shadow: none;
+}
+
+textarea.form-control {
+  height: 100px;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+textarea.form-control:focus {
+  border: 1px solid #F16B64;
+  box-shadow: none;
+}
+
+.checkBtnAvail {
+  padding: 16px;
+  background: #28BE94;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  border: 1px solid #28BE94;
+  cursor: pointer;
+}
+
+.checkBtnAvail:hover {
+  border: 1px solid #28BE94;
+  background-color: #fff;
+  color: #28BE94;
+}
+
+/*--weding ceremonty--*/
+.weddngCeremonyPge h1 {
+  font-size: 56px;
+  color: #10375C;
+}
+
+.weddngCeremonyPge h1 span {
+  color: #F16B64;
+}
+
+.posRel {
+  position: relative;
+}
+
+.weddngCeremonyPge {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.weddngPage {
+  margin: 40px 0;
+}
+
+.pageTitle.weddngCeremonyPge {
+  padding-right: 145px;
+}
+
+.w-302 {
+  width: 302px;
+  height: 302px;
+}
+
+.creditScore img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.height-264 {
+  height: 264px;
+  margin-bottom: 8px;
+}
+
+.accordionBox.parentAccordion .accordion-button:not(.collapsed) {
+  padding: 0 0 16px;
+}
+
+.accordionBox.parentAccordion .accordion-body {
+  padding: 0 0;
+}
+
+.childAcc .accordion-item {
+  padding: 16px;
+}
+
+
+
+ul.accordionListing {
+  margin-bottom: 0;
+}
+
+
+.mb-24 {
+  margin-bottom: 24px;
 }

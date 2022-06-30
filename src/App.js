@@ -30,13 +30,8 @@ function App() {
                     <div class='heightCalc'>
                         <Switch>
                             <Route path="/" exact component={Home} />
-
                             <Route path="/marriage-laws" exact component={MarriageLaws} />
-
-
                             <Route path="/marriage-laws/los-angeles/norwalklosangeles" exact component={AgencyDetails} />
-
-
                             <Route path="/state" exact component={StateDetailPage} />
                             <Route path="/family-laws" exact component={FamilyLaws} />
                             <Route path="/immigration-laws" exact component={ImmigrationLaws} />

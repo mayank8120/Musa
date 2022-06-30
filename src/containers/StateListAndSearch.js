@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const StateListAndSearch = () => {
     return (
@@ -77,30 +77,14 @@ const StateListAndSearch = () => {
                                                 <li class="fontSize12 fontWeight400"><a href="#">Wyoming</a></li>
                                             </div>
                                         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
                                     </ul>
                                 </div>
-
-
-
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div>            
+        </div>        
     )
 }
 

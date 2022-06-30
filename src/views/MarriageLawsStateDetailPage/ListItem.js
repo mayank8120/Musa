@@ -1,13 +1,14 @@
-import React from 'react'
+import React from 'react';
+import { Button } from 'react-bootstrap';
 
 const ListItem = () => {
     return (
         <div class="stateDetlInfo brdrRadius4 bgWhite">
             <div class="d-flex align-items-center stateName">
                 <h3 class="fontSize18 fontWeight700 mb-0">Norwalk Los Angeles County Long Name Example</h3>
-                <div class="ms-auto">
+                {/* <div class="ms-auto">
                     <span class="chevronRight"><a href="#"><img src={require('../../assets/img/greyRightArrow.svg').default} /></a></span>
-                </div>
+                </div> */}
             </div>
             <div class="d-flex align-items-center stateDel">
                 <div class="stateleftInfo">
@@ -34,6 +35,9 @@ const ListItem = () => {
                     <div class="feeBlock">
                         <p class="price fontSize16 fontWeight600 greenColor mb-0">$85</p>
                         <p class="mb-0 fontSize14 fontWeight400 primaryColor">Confidential License Fee</p>
+                    </div>
+                    <div class="feeBlock moreInfoBtn">
+                        <Button variant="primary" className="transition fontSize16 fontWeight700">More Info</Button>
                     </div>
                 </div>
             </div>

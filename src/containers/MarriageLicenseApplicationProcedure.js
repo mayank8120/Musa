@@ -16,7 +16,7 @@ const MarriageLicenseApplicationProcedure = () => {
                         </div>
                         <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                             <div class="row">
-                                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                                     <div class="procedureListNum">
                                         <div class="procedureIcon brdrRadius8">
                                             <img src={require('../assets/img/procedureIcn1.svg').default} />
@@ -26,7 +26,7 @@ const MarriageLicenseApplicationProcedure = () => {
                                             appear in person at a courthouse, city hall, or town office.</p>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                                     <div class="procedureListNum">
                                         <div class="procedureIcon brdrRadius8">
                                             <img src={require('../assets/img/procedureIcn2.svg').default} />
@@ -36,7 +36,7 @@ const MarriageLicenseApplicationProcedure = () => {
                                             application in the presence of the clerk (along with payment of a fee).</p>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                                     <div class="procedureListNum">
                                         <div class="procedureIcon brdrRadius8">
                                             <img src={require('../assets/img/procedureIcn3.svg').default} />
