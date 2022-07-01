@@ -198,21 +198,24 @@ const ImmigrationLaws = () => {
                                         <h2 class="fontWeight700 fontSize24 whiteColor mb-0">Marriage Records<br /> Search</h2>
                                     </div>
                                 </div> */}
-
-                                <BannerSmallCards
-                                    mainDivColor={'marriage_Record'}
-                                    boxSpecificImage={`marrgeRecord`}
-                                    boxTitle={"Marriage Records Search"} />
-
-
-                                <div class="creditScore mb-24">
-                                    <img class="" src={require(`../../assets/img/creditScore.png`).default} />
+                                <div class="w-302 mb-24">
+                                    <BannerSmallCards
+                                        mainDivColor={'marriage_Record'}
+                                        boxSpecificImage={`marrgeRecord`}
+                                        boxTitle={"Marriage Records Search"} />
                                 </div>
+                                <div class="w-302 mb-24">
 
-                                <BannerSmallCards
-                                    mainDivColor={'divorce_recod'}
-                                    boxSpecificImage={'wedngLaws'}
-                                    boxTitle={'Divorce Records Search'} />
+                                    <div class="creditScore mb-24">
+                                        <img class="" src={require(`../../assets/img/creditScore.png`).default} />
+                                    </div>
+                                </div>
+                                <div class="w-302 mb-24">
+                                    <BannerSmallCards
+                                        mainDivColor={'divorce_recod'}
+                                        boxSpecificImage={'wedngLaws'}
+                                        boxTitle={'Divorce Records Search'} />
+                                </div>
                                 {/* <div class="divorce_recod brdrRadius4 colordBox mb-24">
                                     <div class="d-flex align-items-top">
                                         <img src={require(`../../assets/img/wedngLaws.svg`).default} />
@@ -232,7 +235,7 @@ const ImmigrationLaws = () => {
                 </div>
             </div>
 
-        </div>
+        </div >
     )
 }
 

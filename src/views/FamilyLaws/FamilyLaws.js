@@ -69,9 +69,9 @@ const FamilyLaws = () => {
                                                             <>
                                                                 <li class={getClassForNav(scrollPos, index, item.id)}>
                                                                     <a href={`#${item.id}`}
-                                                                        // onClick={
-                                                                        //     scrollToLink(item.id)
-                                                                        // }
+                                                                    // onClick={
+                                                                    //     scrollToLink(item.id)
+                                                                    // }
                                                                     >{item.heading}</a>
                                                                 </li>
                                                             </>
@@ -106,20 +106,24 @@ const FamilyLaws = () => {
 
                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                             <div class="stateRightPage">
-                                <BannerSmallCards
-                                    mainDivColor={'wedding_laws'}
-                                    boxSpecificImage={'court'}
-                                    boxTitle={'Find Wedding Laws in Every State'} />
-
-
-
-                                <div class="creditScore">
-                                    <img src={require('../../assets/img/creditScore.png').default} />
+                                <div class="w-302 mb-24">
+                                    <BannerSmallCards
+                                        mainDivColor={'wedding_laws'}
+                                        boxSpecificImage={'court'}
+                                        boxTitle={'Find Wedding Laws in Every State'} />
                                 </div>
-                                <BannerSmallCards
-                                    mainDivColor={'divorce_recod'}
-                                    boxSpecificImage={'wedngLaws'}
-                                    boxTitle={'Divorce Records Search'} />
+
+                                <div class="w-302 mb-24">
+                                    <div class="creditScore">
+                                        <img src={require('../../assets/img/creditScore.png').default} />
+                                    </div>
+                                </div>
+                                <div class="w-302 mb-24">
+                                    <BannerSmallCards
+                                        mainDivColor={'divorce_recod'}
+                                        boxSpecificImage={'wedngLaws'}
+                                        boxTitle={'Divorce Records Search'} />
+                                </div>
                             </div>
                         </div>
                     </div>
