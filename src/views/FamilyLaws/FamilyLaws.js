@@ -108,9 +108,9 @@ const FamilyLaws = () => {
                             <div class="stateRightPage">
                                 <div class="w-302 mb-24">
                                     <BannerSmallCards
-                                        mainDivColor={'wedding_laws'}
-                                        boxSpecificImage={'court'}
-                                        boxTitle={'Find Wedding Laws in Every State'} />
+                                        mainDivColor={'marriage_Record'}
+                                        boxSpecificImage={`marrgeRecord`}
+                                        boxTitle={"Marriage Records Search"} />
                                 </div>
 
                                 <div class="w-302 mb-24">
