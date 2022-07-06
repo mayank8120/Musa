@@ -5,6 +5,7 @@ import FooterSearch from "../../containers/FooterSearch";
 import LongContentCard from "../../containers/LongContentCard";
 import {
   getClassForNav,
+  scrollToLink,
   swipeUpDownPageOnClick,
   useScrollPositionHook,
 } from "../../Functions/functions";
@@ -71,28 +72,43 @@ const Weddingceremonies = () => {
                         <ul>
                           {weddingCeremoniesList.map((item, index) => (
                             <>
-                              {index === 0 ? (
-                                <li className="leftNavSUperParent">
-                                  <h6 class="mb-0">
-                                    Wedding Traditions and Superstitions
-                                  </h6>
-                                </li>
-                              ) : null}
-                              {index === 3 ? (
-                                <li className="leftNavSUperParent">
-                                  <h6 class="mb-0">
-                                    Religious Wedding Ceremony Guide
-                                  </h6>
-                                </li>
-                              ) : null}
+                              {
+                                index === 0 ?
+                                  (
+                                    <li className="leftNavSUperParent">
+                                      <h6 class="mb-0">
+                                        Wedding Traditions and Superstitions
+                                      </h6>
+                                    </li>
+                                  )
+                                  :
+                                  null
+                              }
+                              {
+                                index === 3 ?
+                                  (
+                                    <li className="leftNavSUperParent">
+                                      <h6 class="mb-0">
+                                        Religious Wedding Ceremony Guide
+                                      </h6>
+                                    </li>
+                                  )
+                                  :
+                                  null
+                              }
                               <li
                                 class={getClassForNav(
                                   scrollPos,
                                   index,
-                                  item.idname
+                                  item.idname,
+                                  "wedd"
                                 )}
+
+                                onClick={
+                                  () => scrollToLink(item.idname)
+                                }
                               >
-                                <a href={`#${item.idname}`}>{item.title}</a>
+                                <a href='javascript:void(0)'>{item.title}</a>
                               </li>
                             </>
                           ))}

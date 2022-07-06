@@ -478,7 +478,7 @@ export const MarriageWaitingPeriodAfterReceivingMarriageLicense = {
 export const MarriageLicenseFees = {
     title: 'Marriage License Fees',
     list: [
-        'Fees for marriage licenses range from a low of $10 to as much as $115. The cost varies based on county, city or municipality, residential status, and in some cases, completion of a pre-marital counseling or education course. A few states, have standard, statewide fees. Preferred method of payment is cash. For guidance on additional methods of payment, please call ahead.'
+        'Fees for marriage licenses range from a low of <b>$10</b> to as much as <b>$115</b>. The cost varies based on county, city or municipality, residential status, and in some cases, completion of a pre-marital counseling or education course. A few states, have standard, statewide fees. Preferred method of payment is cash. For guidance on additional methods of payment, please call ahead.'
     ]
 }
 
@@ -492,11 +492,11 @@ export const MarriageBloodTestRequirements = {
 export const MarriageAgeRequirements = {
     title: 'Marriage Age Requirements',
     list: [
-        'In the United States, all but one state requires that a couple be 18 in order to marry without parental permission.',
-        'Nebraska sets the age of majority at 19. Although a few states will waive this requirement if there is a pregnancy, the couple may still have to have court approval.',
-        'Delware, Florida, Georgia, Kentucky, Maryland, and Oklahoma: Allow pregnant teens or teens who have already had a child to get married without parental consent.',
-        'However in Florida, Kentucky, and Oklahoma, the young couple must have authorization from a court.',
-        'Maryland requires that the minor be at least 16. Even with parental approval, many states will require court approval when a person is 16 years of age or less.'
+        'In the United States, all but one state requires that a couple be <b>18</b> in order to marry without parental permission.',
+        'Nebraska sets the age of majority at <b>19</b>. Although a few states will waive this requirement if there is a pregnancy, the couple may still have to have court approval.',
+        'Delware, Florida, Georgia, Kentucky, Maryland, and Oklahoma: Allow <b>pregnant teens</b> or teens who have already had a child to get married without parental consent.',
+        'However in Florida, Kentucky, and Oklahoma, the young couple <b>must have authorization</b> from a court.',
+        'Maryland requires that the minor be <b>at least 16</b>. Even with parental approval, many states will require court approval when a person is <b>16</b> years of age or less.'
     ]
 }
 

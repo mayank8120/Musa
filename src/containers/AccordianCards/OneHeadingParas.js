@@ -14,7 +14,7 @@ const OneHeadingParas = ({ data, id }) => {
                             {
                                 data.list.map(
                                     (listitem) => (
-                                        <p>{listitem}</p>
+                                        <p dangerouslySetInnerHTML={{ __html: listitem }} />
                                     )
                                 )
                             }

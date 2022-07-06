@@ -23,6 +23,7 @@ import OneHeadingParas from "../../containers/AccordianCards/OneHeadingParas";
 import LongContentCard from "../../containers/LongContentCard";
 import {
   getClassForNav,
+  scrollToLink,
   swipeUpDownPageOnClick,
   useScrollPositionHook,
 } from "../../Functions/functions";
@@ -267,10 +268,15 @@ const MarriageLaws = () => {
                                 class={getClassForNav(
                                   scrollPos,
                                   index,
-                                  item.idname
+                                  item.idname,
+                                  "marrlaw"
                                 )}
+
+                                onClick={
+                                  () => scrollToLink(item.idname)
+                                }
                               >
-                                <a href={`#${item.idname}`}>{item.title}</a>
+                                <a href='javascript:void(0)'>{item.title}</a>
                               </li>
                               {/* <li >
                                                                         <a href={`#${item.idname}`}>{item.title}</a>

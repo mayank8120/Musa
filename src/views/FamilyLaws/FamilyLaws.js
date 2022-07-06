@@ -3,7 +3,7 @@ import { familyLawsContent } from '../../constants/JSONS'
 import BannerSmallCards from '../../containers/BannerSmallCards'
 import LongContentCard from '../../containers/LongContentCard'
 import StateListAndSearch from '../../containers/StateListAndSearch'
-import { getCardLb, getClassForNav, getCurrentHash, getLocationParaCount, useScrollPositionHook } from '../../Functions/functions'
+import { getCardLb, getClassForNav, getCurrentHash, getLocationParaCount, scrollToLink, useScrollPositionHook } from '../../Functions/functions'
 
 // import '../../assets'
 
@@ -18,14 +18,19 @@ const FamilyLaws = () => {
 
 
     const scrollPos = useScrollPositionHook();
-    console.log(scrollPos);
+    console.log(scrollPos, "PPPPPP");
 
 
-    // const scrollToLink = (id) => {
-    //     if (scrollPos > 10)
-    //         window.scrollTo(0, parseFloat(getCardLb(id)) + 200);
-    // }
 
+
+
+    // window.scrollTo(0, 300);
+
+    // window.scrollTo({
+    //     top: 300,
+    //     left: 0,
+    //     behavior: "auto"
+    // });
 
 
     return (
@@ -67,12 +72,12 @@ const FamilyLaws = () => {
                                                     familyLawsContent.map(
                                                         (item, index) => (
                                                             <>
-                                                                <li class={getClassForNav(scrollPos, index, item.id)}>
-                                                                    <a href={`#${item.id}`}
-                                                                    // onClick={
-                                                                    //     scrollToLink(item.id)
-                                                                    // }
-                                                                    >{item.heading}</a>
+                                                                <li class={getClassForNav(scrollPos, index, item.id)}
+                                                                    onClick={
+                                                                        () => scrollToLink(item.id)
+                                                                    }
+                                                                >
+                                                                    <a href='javascript:void(0)'>{item.heading}</a>
                                                                 </li>
                                                             </>
                                                         )

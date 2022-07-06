@@ -59,22 +59,63 @@ export let getCardUb = (id) => {
 }
 
 
-export let getClassForNav = (height, index, id) => {
+export let getClassForNav = (height, index, id, type) => {
     let h = parseFloat(height);
     let ret = '';
-    if (h < 210) {
-        if (index === 0) {
-            ret = 'active';
+
+    if (type == "wedd") {
+        if (h < 590) {
+            if (index === 0) {
+                ret = 'active';
+            } else {
+                ret = '';
+            }
         } else {
-            ret = '';
+            let l = parseFloat(getCardLb(id)) - 210;
+            let u = parseFloat(getCardUb(id)) - 210;
+            if (h <= u && h >= l) {
+                ret = 'active'
+            } else {
+                ret = '';
+            }
         }
-    } else {
-        let l = parseFloat(getCardLb(id)) - 210;
-        let u = parseFloat(getCardUb(id)) - 210;
-        if (h <= u && h >= l) {
-            ret = 'active'
+
+    }
+
+    else if (type == 'marrlaw') {
+        if (h < 730) {
+            if (index === 0) {
+                ret = 'active';
+            } else {
+                ret = '';
+            }
         } else {
-            ret = '';
+            let l = parseFloat(getCardLb(id)) - 210;
+            let u = parseFloat(getCardUb(id)) - 210;
+            if (h <= u && h >= l) {
+                ret = 'active'
+            } else {
+                ret = '';
+            }
+        }
+
+    }
+
+    else {
+        if (h < 210) {
+            if (index === 0) {
+                ret = 'active';
+            } else {
+                ret = '';
+            }
+        } else {
+            let l = parseFloat(getCardLb(id)) - 210;
+            let u = parseFloat(getCardUb(id)) - 210;
+            if (h <= u && h >= l) {
+                ret = 'active'
+            } else {
+                ret = '';
+            }
         }
     }
     return ret;
@@ -94,3 +135,6 @@ export const removeAllSpaces = (str) => {
 
 
 
+export const scrollToLink = (id) => {
+    window.scrollTo(0, parseFloat(getCardLb(id)) - 200);
+}

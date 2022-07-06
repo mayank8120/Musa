@@ -4,7 +4,7 @@ import { docsForGreenCrdContent, immigrationLawsParaContent, immigrationProcessA
 import BannerSmallCards from '../../containers/BannerSmallCards';
 import FooterSearch from '../../containers/FooterSearch';
 import LongContentCard from '../../containers/LongContentCard';
-import { getClassForNav, getCurrentHash, getLocationParaCount, swipeUpDownPageOnClick, useScrollPositionHook } from '../../Functions/functions'
+import { getClassForNav, getCurrentHash, getLocationParaCount, scrollToLink, swipeUpDownPageOnClick, useScrollPositionHook } from '../../Functions/functions'
 import ImmigrationLawsListsItem from './ImmigrationLawsListsItem';
 import ImmigrationPrcssIntrv from './ImmigrationPrcssIntrv';
 
@@ -66,8 +66,12 @@ const ImmigrationLaws = () => {
                                                         navigationList.map(
                                                             (item, index) => (
                                                                 <>
-                                                                    <li class={getClassForNav(scrollPos, index, item.idname)}>
-                                                                        <a href={`#${item.idname}`}>{item.title}</a>
+                                                                    <li class={getClassForNav(scrollPos, index, item.idname)}
+                                                                        onClick={
+                                                                            () => scrollToLink(item.idname)
+                                                                        }
+                                                                    >
+                                                                        <a href='javascript:void(0)'>{item.title}</a>
                                                                     </li>
                                                                 </>
                                                             )
